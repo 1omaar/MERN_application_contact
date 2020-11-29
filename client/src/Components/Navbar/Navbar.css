@@ -1,0 +1,17 @@
+.mr-auto {
+  margin-left: 76% !important;
+}
+.resume_design {
+  color: white;
+}
+.resume_design:hover {
+  color: rebeccapurple;
+}
+.home_design {
+  color: white;
+  margin-right: 35% !important;
+}
+.home_design:hover {
+    color: rebeccapurple;
+  }
+  
