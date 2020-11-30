@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
 import { store } from "./JS/store/store";
+import 'semantic-ui-css/semantic.min.css'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
