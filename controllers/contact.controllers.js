@@ -8,11 +8,19 @@ exports.postContact = async (req, res) => {
   }
 };
 exports.getAllContacts = async (req, res) => {
+  let s = req.query.a;
+   let newName = new RegExp(s,"i")
+   console.log(s,newName)
   try {
-    const result = await Contact.find();
+    if(s){
+    let result = await Contact.find({name:newName});
     res
       .status(200)
-      .send({ response: result, message: "geting contact successfly" });
+      .json({ response: result, message: "result of your search" });
+      return;
+    }
+    let result=await Contact.find()
+    res.status(200).json({message:"geting all contact",response:result})
   } catch (error) {
     res.status(400).send("cannot get contacts");
   }

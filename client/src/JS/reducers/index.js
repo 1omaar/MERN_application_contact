@@ -1,3 +1,4 @@
 import { combineReducers } from "redux";
 import { contactReducer } from "./contacts";
-export const rootReducer = combineReducers({ contactReducer });
+import { addAndEditReducer } from "./addOrEdit";
+export const rootReducer = combineReducers({ contactReducer,addAndEditReducer });

@@ -13,7 +13,7 @@ router.post("/", controllers.postContact);
 // @desc get all contact
 // @path:http://localhost:5000/api/contact
 
-router.get("/", controllers.getAllContacts);
+router.get("/name/:a?", controllers.getAllContacts);
 
 // @GET method
 // @desc get contact by id

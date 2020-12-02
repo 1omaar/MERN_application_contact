@@ -1,5 +1,11 @@
+.title-design{
+  font-weight: bold;
+  color: beige;
+  font-size: 130%;
+  text-shadow: 1px 1px 2px pink;
+}
 .mr-auto {
-  margin-left: 76% !important;
+  margin-left: 80% !important;
 }
 .resume_design {
   color: white;
@@ -13,5 +19,8 @@
 }
 .home_design:hover {
     color: rebeccapurple;
+  }
+  .nav_design{
+    margin-bottom: 2%;
   }
   

@@ -1,11 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import "./Error.css";
 function Error() {
-    return (
-        <div>
-            error 404
-        </div>
-    )
+  return (
+    <div>
+      <img
+        src="/error404.jpg"
+        alt="error404"
+        className="error-design"
+      />
+    </div>
+  );
 }
 
-export default Error
+export default Error;
